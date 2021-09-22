@@ -1,6 +1,6 @@
 # SE 452 - Enterprise Object Oriented Computing 
 
-*Stephen Jennings*, *Umar Azfar*..add your names here
+*Stephen Jennings*, *Umar Azfar*, *Patrick Markowski*
 
 ## Library Checkout Application 
 The purpose of this project is to demonstrate Enterprise Object-Oriented development concepts through the architecture
