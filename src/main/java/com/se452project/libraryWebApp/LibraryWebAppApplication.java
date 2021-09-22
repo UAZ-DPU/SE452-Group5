@@ -1,0 +1,13 @@
+package com.se452project.libraryWebApp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LibraryWebAppApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LibraryWebAppApplication.class, args);
+	}
+
+}
