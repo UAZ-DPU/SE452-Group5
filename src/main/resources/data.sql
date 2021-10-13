@@ -18,3 +18,15 @@ INSERT INTO usernameEmployee (employeeID, username) VALUES
     (1003, 'hmakas'),
     (1004, 'aleos5'),
     (1005, 'lasef');
+
+INSERT INTO booksAvailable (bookID, numAvailable) VALUES
+    ('000000001', 5),
+    ('000000002', 32),
+    ('000000003', 2),
+    ('000000004', 0);
+
+INSERT INTO magazinesAvailable (magazineID, numAvailable) VALUES
+    ('M00000001', 6),
+    ('M00000002', 22),
+    ('M00000003', 7),
+    ('M00000004', 0);
