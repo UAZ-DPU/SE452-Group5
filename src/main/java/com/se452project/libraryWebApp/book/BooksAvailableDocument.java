@@ -10,6 +10,10 @@ public class BooksAvailableDocument {
     @Id
     private String bookId;
 
+    private String title;
+
+    private String author;
+
     private int numberAvailable;
 
 }
