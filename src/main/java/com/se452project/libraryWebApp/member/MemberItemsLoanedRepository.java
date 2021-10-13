@@ -7,6 +7,6 @@ import java.util.List;
 
 @Repository
 public interface MemberItemsLoanedRepository extends MongoRepository<MemberItemsLoaned, String> {
-    List findbyMembers(String memberId);
+    List findByMembers(String memberId);
     List findByItem(String itemID);
 }
