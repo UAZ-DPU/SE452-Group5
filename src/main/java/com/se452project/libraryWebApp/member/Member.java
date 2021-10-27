@@ -1,24 +1,25 @@
 package com.se452project.libraryWebApp.member;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
-import javax.persistence.Id;
 
-@Data
-@Entity
-@Table(name="member")
 public class Member {
 
-    @NotNull
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int memberID;
 
-    @NotNull
+    @Column(nullable = false)
     private String fName;
 
-    @NotNull
+    @Column(nullable = false)
     private String lName;
+
+    @Column(nullable = false,unique = true, length=45)
+    private String email;
+
+    @Column(nullable = false)
+    private String password;
 }

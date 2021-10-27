@@ -9,6 +9,8 @@ CREATE TABLE member
   memberID    number(3),
   fName       varchar(30),
   lName       varchar(30),
+  password    varchar(8),
+  email       varchar(45),
   primary key (memberID)
 );
 

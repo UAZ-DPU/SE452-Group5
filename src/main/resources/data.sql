@@ -1,9 +1,9 @@
 INSERT INTO member (memberID, fName, lName) VALUES
-    (101, 'John', 'Smith'),
-    (102, 'Jane', 'Doe'),
-    (103, 'Max', 'Adams'),
-    (104, 'Josh', 'Williams'),
-    (105, 'Jack', 'Brown');
+    (101, 'John', 'Smith', 'pass1234'),
+    (102, 'Jane', 'Doe', 'pass1235'),
+    (103, 'Max', 'Adams', 'pass1236'),
+    (104, 'Josh', 'Williams', 'pass1237'),
+    (105, 'Jack', 'Brown', 'pass1238');
 
 INSERT INTO booksCheckedOut (memberID, numCheckedOut) VALUES
     (101, 2),
