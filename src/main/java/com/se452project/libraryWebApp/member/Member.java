@@ -5,6 +5,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
 
+@Entity
+@Data
 public class Member {
 
     @Id
@@ -12,9 +14,9 @@ public class Member {
     private int memberID;
 
     @Column(nullable = false)
-    private String fName;
+    private String fName, name = "first_name";
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "last_name")
     private String lName;
 
     @Column(nullable = false,unique = true, length=45)
