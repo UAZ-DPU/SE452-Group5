@@ -4,8 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BooksAvailableRepository extends MongoRepository<BooksAvailableDocument, String> {
-    int findByISBN(String bookISBN);
-    String findByTitle(String bookTitle);
-    String findByAuthor(String authorName);
+public interface BooksAvailableRepository extends MongoRepository<Book, String> {
+
 }

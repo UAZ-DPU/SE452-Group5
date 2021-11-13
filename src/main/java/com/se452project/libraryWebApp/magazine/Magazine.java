@@ -10,8 +10,6 @@ import lombok.Data;
 import javax.persistence.Id;
 
 @Data
-@Entity
-@Table(name="Magazine")
 public class Magazine implements Item {
 
     @NotNull

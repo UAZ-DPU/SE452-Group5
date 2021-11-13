@@ -6,13 +6,18 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.se452project.libraryWebApp.itemObject.Item;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import javax.persistence.Id;
 
 @Data
-@Entity
-@Table(name="Book")
-public class Book implements Item {
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection = "book")
+public class Book{
 
     @NotNull
     @Size(min = 2, max = 25)
@@ -27,13 +32,4 @@ public class Book implements Item {
     @Size(min = 1)
     private String title;
 
-    @Override
-    public String returnItemId() {
-        return bookID;
-    }
-
-    @Override
-    public String returnItemType() {
-        return "Book";
-    }
 }
